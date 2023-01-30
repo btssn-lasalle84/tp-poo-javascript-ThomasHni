@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "TestPerimetre",
+      "setup": "npm install",
+      "run": "npm test perimetre.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "TestAire",
+      "setup": "npm install",
+      "run": "npm test aire.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}

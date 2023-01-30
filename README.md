@@ -1,3 +1,5 @@
+<img alt="points bar" align="right" height="36" src="../../blob/badges/.github/badges/points-bar.svg" />
+
 # TP POO : JavaScript
 
 - [TP POO : JavaScript](#tp-poo--javascript)
@@ -274,6 +276,8 @@ Question 8. Instancier un objet `rectangle` par défaut et un objet `carre` dont
 Question 9. Ajouter une méthode `affiche()` qui affichera la largeur et la longueur (si celles-ci sont définies) d’un objet `Rectangle` sous la forme "largeur x longueur". Appeler la méthode `affiche()` sur les objets `rectangle` et `carre`.
 
 Question 10. Ajouter les méthodes `aire()` et `perimetre()` qui retourne successivement l’aire et le périmètre d’un objet `Rectangle`. Afficher l’aire et le périmètre de l’objet `carre`.
+
+> Ajouter, à la fin du script `rectangle.js`, la ligne suivante pour les tests unitaires : `module.exports = Rectangle;`
 
 _Bonus :_ Implémenter le programme Hello World sous forme d’un serveur web local sur le port 5000.
 

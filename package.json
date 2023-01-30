@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "name": "example",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "babel-jest": "*",
+    "jest": "^29.4.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
