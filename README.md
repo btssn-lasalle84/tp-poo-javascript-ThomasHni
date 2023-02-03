@@ -1,5 +1,7 @@
 <img alt="points bar" align="right" height="36" src="../../blob/badges/.github/badges/points-bar.svg" />
 
+![](https://img.shields.io/badge/Github-Classroom-green.svg) ![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=plastic)
+
 # TP POO : JavaScript
 
 - [TP POO : JavaScript](#tp-poo--javascript)
@@ -11,16 +13,19 @@
   - [Travaux pratiques](#travaux-pratiques)
     - [Pré-requis](#pré-requis)
     - [Travail demandé](#travail-demandé)
+  - [Tests unitaires](#tests-unitaires)
   - [Bac à sable et développement en ligne](#bac-à-sable-et-développement-en-ligne)
 
 **Les objectifs de ce TP sont de s’initier à la programmation JavaScript en transférant ses connaissances de la programmation orientée objet.**
+
+> Pour les enseignants, ceci est un "petit" devoir pour [Github Classroom](https://btssn-lasalle84.github.io/guides-developpement-logiciel/guide-classroom.html). Il montre l'utilisation des tests unitaires en JavaScript, la notation automatique et l'insertion d'un badge pour l'affichage de la note.
 
 ## Le langage JavaScript
 
 Cette partie présente les éléments essentiels à connaître sur JavaScript. Evidemment, cela ne remplace pas un cours ou la documentation officielle du langage.
 ### Présentation
 
-JavaScript (qui est souvent abrégé en « JS ») est un langage de script léger, orienté objet, principalement connu comme le langage de script des pages web. Mais il est aussi utilisé dans de nombreux environnements extérieurs aux navigateurs web tels que **Node.js**. Le code JavaScript est interprété ou compilé à la volée (JIT). 
+JavaScript (qui est souvent abrégé en « JS ») est un langage de script léger, orienté objet, principalement connu comme le langage de script des pages web. Mais il est aussi utilisé dans de nombreux environnements extérieurs aux navigateurs web tels que **Node.js**. Le code JavaScript est interprété ou compilé à la volée (JIT).
 
 > JavaScript ne doit pas être confondu avec le langage de programmation Java.
 
@@ -280,6 +285,41 @@ Question 10. Ajouter les méthodes `aire()` et `perimetre()` qui retourne succes
 > Ajouter, à la fin du script `rectangle.js`, la ligne suivante pour les tests unitaires : `module.exports = Rectangle;`
 
 _Bonus :_ Implémenter le programme Hello World sous forme d’un serveur web local sur le port 5000.
+
+## Tests unitaires
+
+Installation :
+
+```sh
+$ cat package.json
+```
+```json
+{
+  "private": true,
+  "version": "0.0.0",
+  "name": "example",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "babel-jest": "*",
+    "jest": "^29.4.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
+```
+
+```sh
+$ npm install
+```
+
+Lancement des tests :
+
+```sh
+$ npm test perimetre.test.js
+$ npm test aire.test.js
+```
 
 ## Bac à sable et développement en ligne
 
